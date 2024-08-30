@@ -1,0 +1,24 @@
+<header>
+    <div class="header-top">
+      <a href="/" class="logo">
+        <img src="logo.png" alt="E-commerce Website Logo" style="width: 50px; height: 50px;">
+      </a>
+      <form class="search-form">
+        <input type="search" placeholder="Search...">
+        <button type="submit">Search</button>
+      </form>
+      <a href="/profile" class="profile-link">
+        <i class="fas fa-user-circle"></i> Profile
+      </a>
+    </div>
+    <div class="header-bottom">
+      <ul class="category-list">
+        @for (category of categoryList; track $index) {
+
+            <li><a>{{category.name}}</a></li>
+        }
+
+      </ul>
+    </div>
+  </header>
+  
